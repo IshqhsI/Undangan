@@ -1,10 +1,27 @@
+@font-face /*perintah untuk memanggil font eksternal*/ {
+  font-family: 'fairPlay'; /*memberikan nama bebas untuk font*/
+  src: url('../font/Playfair_Display/PlayfairDisplay-Regular.ttf'); /*memanggil file font eksternalnya di folder nexa*/
+}
+
 .first {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../images/img.jpg');
+  background: url('../images/yaa.jpg');
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.first::after {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
 }
 
 .map {
@@ -15,7 +32,15 @@
 
 @media only screen and (max-width: 720px) {
   .first {
-    background-position: 10% 40%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/new.jpg');
+    background-position: 56%;
+    position: relative;
+    background-size: cover;
   }
 
   .third img {
@@ -53,32 +78,75 @@
     text-align: center;
     font-size: 12px;
   }
+
+  .flower {
+    margin-bottom: 0;
+  }
+
+  .about .peng {
+    width: 50% !important;
+  }
 }
 
 .tho {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
-  font-style: italic;
-  font-weight: bold;
+  font-family: 'Montserrat', serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-shadow: 1px 0.7px #1b1a18;
 }
 
 .name {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Secular One', sans-serif;
   margin: 1.2rem 0;
-  font-size: 36px;
+  font-size: 24px;
+  color: #fff;
+  position: relative;
+  text-shadow: 1px 1px #b66815;
+  z-index: 1;
 }
 
 .time {
-  font-family: 'Dancing Script', cursive;
-  font-size: 24px;
+  font-family: 'Montserrat', serif;
+  font-size: 12px;
   font-weight: bold;
+  position: relative;
+  color: #fff;
+  margin-top: 1rem;
+  text-shadow: 1px 0.7px #1b1a18;
+  z-index: 1;
+}
+
+.about {
+  background-color: #e2c0b4;
+  width: 100%;
+  height: 100vh;
+  /* padding: 20px 0; */
+}
+
+.about h5 {
   margin-top: 2rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.about h4 {
+  margin-bottom: 1.6rem;
+  font-family: 'fairPlay', cursive;
+}
+
+.about p {
+  font-family: 'Montserrat', serif;
 }
 
 .second {
   height: 100%;
   width: 100%;
-  background-color: #f4c197;
+  /* background-color: #f4c197; */
+  background-color: #f1c094;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -102,9 +170,14 @@
   font-weight: 700;
 }
 
-.second img {
+.first .flower {
+  text-align: center;
+}
+
+.flower {
   width: 60px;
   transform: rotate(90deg);
+  text-align: center;
 }
 
 .third {
