@@ -210,7 +210,8 @@
 .third {
   height: 100%;
   width: 100%;
-  background-color: #dc6605;
+  background-color: bisque;
+  color: #582800;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -223,14 +224,14 @@
   font-size: 18px !important;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: bisque;
+  color: rgb(104, 64, 16);
 }
 
 .third h2 {
   font-size: 40px !important;
   font-family: 'Dancing Script';
   font-weight: 700;
-  color: bisque;
+  color: rgb(199, 109, 0);
 }
 
 .fourth {
@@ -245,15 +246,17 @@
 }
 
 .btn-rute {
-  background-color: bisque;
+  background-color: rgb(125, 73, 8);
   padding: 8px 30px;
   font-weight: 700;
+  color: bisque;
 }
 
 .btn-rute:hover {
-  background-color: rgb(255, 196, 124) !important;
+  background-color: rgb(103, 61, 10) !important;
   padding: 8px 30px;
   font-weight: 700;
+  color: bisque !important;
 }
 
 .box {
